@@ -47,13 +47,13 @@ public class VerbalArithmetic {
 
     private static boolean isSolved(String equation) {
         // Check if there is a letter in the equation
-        for     (int i = 0 ; i < equation.length() ; i++) {
+        for (int i = 0 ; i < equation.length() ; i++) {
             if ( Character.isLetter(equation.charAt(i)) ) {
                 return false;
             }
         }
 
-        // Get the parts of the string a+b=c
+        // Get the parts of the string a + b = c
         String a = equation.substring(0, equation.indexOf('+'));
         String b = equation.substring(equation.indexOf('+') + 1, equation.indexOf('='));
         String c = equation.substring(equation.indexOf('=') + 1);
